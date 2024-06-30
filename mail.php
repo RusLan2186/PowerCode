@@ -13,7 +13,7 @@ $email = $_POST['email'];
 $mail->isSMTP(); 
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'test300624@gmail.com'; 
+$mail->Username = '300624test@gmail.com'; 
 $mail->Password = 'test12345test';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 587; 
