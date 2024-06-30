@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POWERCODE ACADEMY</title>
+    <link rel="icon" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="./countries/css/demo.css" />
+    <link rel="stylesheet" href="./countries/css/intlTelInput.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js@1/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="wrapper">
+
+        <header class="header">
+          <div class="header__container">
+            <div class="header__logo">
+              <a href="#"> <img src="./img/header/logo.svg" alt="Logo" /></a>
+            </div>
+            <div class="header__info">
+              <div class="header__info_item">
+                <img src="./img/header/date.svg" alt="date" />
+                <span>28 декабря</span>
+              </div>
+              <div class="header__info_item">
+                <img src="./img/header/duration.svg" alt="duration" />
+                <span>3,5 часа</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <section class="webinar">
+            <div class="webinar__container">
+              <div class="webinar__wrapper">
+                <div class="webinar-info__block">
+                  <div class="webinar__info info">
+                    <div class="info__btn">
+                      <img src="./img/webinar/time.svg" alt="time" />
+                      <span>Вебинар</span>
+                    </div>
+                    <h1 class="info__title">front-end</h1>
+                    <div class="info__subtitle">
+                      <div class="info__block"></div>
+                      <p>легкий старт в IT профессии</p>
+                    </div>
+                    <p class="info__text">
+                      <span>Узнайте какими </span> навыками должен обладать
+                      фронтенд разработчик в 2022 году
+                      <span
+                        >и как начать карьеру в востребованной профессии</span
+                      >
+                    </p>
+                  </div>
+
+                  <div class="webinar__form form-wrapper">
+                    <h2 class="form-wrapper__title">
+                      Запишитесь <span>бесплатно</span> <br />
+                      и получите подарок
+                    </h2>
+                    <form class="form-wrapper__form form" id="myForm">
+                      <div class="form__input_block">
+                        <div class="error" id="nameError"></div>
+                        <input
+                          class="form__input"
+                          type="text"
+                          placeholder="Ваше имя и фамилия"
+                          id="name"
+                          name="name"
+                        />
+                      </div>
+                      <div class="form__input_block">
+                        <div class="error" id="phoneError"></div>
+                        <input
+                          class="form__input"
+                          type="text"
+                          placeholder="Ваш номер телефона"
+                          id="phone"
+                          name="phone"
+                        />
+                      </div>
+                      <div class="form__input_block">
+                        <div class="error" id="emailError"></div>
+                        <input
+                          class="form__input"
+                          placeholder="Ваш email"
+                          id="email"
+                          name="email"
+                        />
+                      </div>
+                      <button class="form__button" type="submit">
+                        Записаться бесплатно
+                      </button>
+                    </form>
+                    <p class="form-wrapper__disclaimer">
+                      Нажимая на кнопку, я соглашаюсь <br />
+                      <a href="#"> с политикой конфиденциальности</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="speaker-and-bonus__block">
+                  <div class="speaker">
+                    <img
+                      src="./img/webinar/speaker.png"
+                      alt="Кирилл Касатонов"
+                    />
+                    <div class="speaker__info">
+                      <p class="speaker__title">
+                        КИРИЛЛ <a href="#">КАСАТОНОВ</a>
+                      </p>
+                      <p class="speaker__text">
+                        6 лет коммерческого опыта с такими компаниями как
+                        Mercedes-Benz и другими крупными корпорациями
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bonus">
+                    <img src="./img/webinar/bonus.png" alt="Кирилл Касатонов" />
+                    <div class="bonus__info">
+                      <p class="bonus__title">Бонус за регистрацию</p>
+                      <p class="bonus__text">
+                        PDF-файл "5 преимуществ профессии фронтенд разработчика"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <img
+            class="developer"
+            src="./img/webinar/front-end developer.png"
+            alt=""
+          />
+
+          <div class="icons">
+            <div class="icon">
+              <img src="./img/icons/html.png" alt="html" />
+            </div>
+            <div class="icon">
+              <img src="./img/icons/css.png" alt="css" />
+            </div>
+            <div class="icon">
+              <img src="./img/icons/js.png" alt="js" />
+            </div>
+            <div class="icon">
+              <img src="./img/icons/sublime.png" alt="sublime" />
+            </div>
+            <div class="icon">
+              <img src="./img/icons/vs-code.png" alt="vs-code" />
+            </div>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js@1/src/toastify.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./countries/js/intlTelInput.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sendData.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.webinar__form {
+  background-color: #303a53;
+  border-radius: 10px;
+  padding: 50px 58px;
+
+  @media (max-width: $tablet) {
+    padding: 41px 58px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 41px 21px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.form-wrapper__title {
+  font-family: "Gilroy-bold";
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  span {
+    color: $purple;
+  }
+}
+
+.form-wrapper__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form__input {
+  background-color: #272d3d;
+  height: 51px;
+  padding-left: 22px;
+  color: #d7d7d7;
+  border-radius: 5px;
+  transition: 0.3s all ease 0s;
+  width: 100%;
+
+  &::placeholder {
+    color: #d7d7d7;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+  }
+}
+
+.form__button {
+  font-family: "Gilroy-bold";
+  background-color: $purple;
+  border-radius: 5px;
+  color: $white;
+  height: 51px;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 0.3s all ease 0s;
+  position: relative;
+  z-index: 10;
+
+  @media (max-width: $mobile) {
+    background-color: #0048ff;
+    width: 90%;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #8f3848;
+
+    @media (max-width: $mobile) {
+      background-color: #253e7d;
+    }
+  }
+}
+
+.form-wrapper__disclaimer {
+  font-family: "Gilroy-medium";
+  text-align: center;
+  font-size: 12px;
+  line-height: 17px;
+  opacity: 0.5;
+  position: relative;
+  z-index: 50;
+  a {
+    color: $white;
+    text-decoration: underline;
+    transition: 0.3s all ease 0s;
+    cursor: pointer;
+  }
+  a:hover {
+    color: $purple;
+  }
+}

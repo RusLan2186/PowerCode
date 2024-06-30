@@ -1,0 +1,74 @@
+.speaker-and-bonus__block {
+  transform: translateY(-130px);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media (max-width: $tablet) {
+    transform: translateY(0px);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+  }
+}
+
+.speaker,
+.bonus {
+  display: flex;
+  align-items: start;
+  column-gap: 17px;
+}
+
+.speaker {
+  @media (max-width: $tablet) {
+    order: 1;
+  }
+}
+
+.bonus {
+  @media (max-width: $tablet) {
+    order: 0;
+  }
+}
+
+.speaker__title,
+.bonus__title {
+  font-family: "Gilroy-bold";
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  column-gap: 5px;
+  margin-bottom: 3px;
+}
+
+.speaker__text,
+.bonus__text {
+  font-size: 12px;
+  line-height: 19px;
+  opacity: 0.5;
+  max-width: 310px;
+}
+.bonus__text {
+  max-width: 210px;
+
+  @media (max-width: $tablet) {
+    max-width: 300px;
+  }
+}
+
+.speaker__title {
+  a {
+    transition: 0.3s all ease 0s;
+  }
+
+  a:hover {
+    color: $purple;
+  }
+}
+
+.bonus {
+  column-gap: 30px;
+}

@@ -1,0 +1,84 @@
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 52%;
+  right: 10%;
+  transform: translateY(-50%);
+
+  @media (max-width: 1700px) {
+    display: none;
+  }
+}
+.icon {
+  margin: 10px 0;
+  position: relative;
+  width: 88px;
+  height: 88px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.icon:nth-child(1) {
+}
+
+.icon:nth-child(2) {
+  left: -85px;
+  bottom: 30px;
+}
+
+.icon:nth-child(3) img {
+  position: relative;
+  left: 20px;
+  bottom: 70px;
+}
+
+.icon:nth-child(4) img {
+  position: relative;
+  left: -70px;
+  bottom: 80px;
+}
+
+.icon:nth-child(5) img {
+  position: relative;
+  left: 30px;
+  bottom: 100px;
+}
+.icon:nth-child(1)::after {
+  background-color: orange;
+}
+
+.icon:nth-child(2)::after {
+  background-color: #2965f1;
+}
+
+.icon:nth-child(3)::after {
+  background-color: #f0be25;
+  top: -50px;
+  right: -25px;
+}
+
+.icon:nth-child(4)::after {
+  background-color: #ff9800;
+  top: -95px;
+  left: 10px;
+}
+
+.icon:nth-child(5)::after {
+  background-color: #48aef3;
+  top: -35px;
+  right: -35px;
+}
+

@@ -1,0 +1,139 @@
+.webinar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 20px;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.webinar-info__block {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+  }
+}
+.webinar__info {
+  @media (max-width: $tablet) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.info__btn {
+  font-family: "Gilroy-semibold";
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  background-color: #4252d1;
+  width: 119px;
+  padding: 4px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info__title {
+  font-family: "Gilroy-extrabold";
+  color: $purple;
+  font-size: 77px;
+  line-height: 94.33px;
+  text-transform: uppercase;
+
+  @media (max-width: 950px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 52px;
+    line-height: 34px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+}
+
+.info__subtitle {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "Gilroy-semibold";
+    font-size: 21px;
+    line-height: 26px;
+
+    @media (max-width: $mobile) {
+      font-family: "Gilroy-semibold";
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.info__block {
+  width: 106px;
+  height: 38px;
+  background-color: $purple;
+  transform: rotate(-3.51deg);
+
+  &::after {
+    font-family: "Gilroy-extrabold";
+    content: "C нуля";
+    font-size: 23px;
+    line-height: 28px;
+
+    position: relative;
+    top: 3px;
+    left: 15px;
+  }
+}
+
+.info__text {
+  font-family: "Gilroy-semibold";
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 26px;
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+  @media (max-width: $mobile) {
+    font-family: "Gilroy-semibold";
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  span {
+    font-family: "Gilroy-medium";
+    opacity: 0.5;
+
+    @media (max-width: $mobile) {
+      font-family: "Gilroy-medium";
+      opacity: 0.5;
+    }
+  }
+}

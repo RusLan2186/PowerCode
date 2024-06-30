@@ -1,0 +1,64 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './reset.scss';
+@import './header.scss';
+@import './webinar.scss';
+@import './form.scss';
+@import './speaker-and-bonus.scss';
+@import './icons-block.scss';
+
+
+.error {
+  color: $red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+body {
+  position: relative;
+  background-color: $bg-color;
+  color: $white;
+  box-sizing: border-box;
+  font-family: "Gilroy-Regular";
+}
+
+span.iti__country-name {
+  color: $bg-color;
+}
+
+.wrapper {
+  background: url("../img/Ellipse.png") no-repeat top right;
+  background-size: 790px;
+  position: relative;
+  @media (max-width: $tablet) {
+    background: none;
+  }
+  @media (max-width: $mobile) {
+    background: linear-gradient(to top, #332f65 19%, transparent 25%);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 399px;
+    height: 399px;
+    background: url("../img/Ellipse.png") no-repeat center center;
+    background-size: 599px;
+    transform: rotate(270deg);
+
+    @media (max-width: $tablet) {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: none;
+    }
+  }
+}
+
+.developer {
+  width: 100%;
+}
+
